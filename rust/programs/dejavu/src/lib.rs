@@ -19,4 +19,8 @@ pub mod dejavu {
     ) -> ProgramResult {
         instructions::initialize_idea::handler(ctx, params)
     }
+
+    pub fn update_idea(ctx: Context<UpdateIdea>, params: UpdateIdeaParams) -> ProgramResult {
+        instructions::update_idea::handler(ctx, params)
+    }
 }

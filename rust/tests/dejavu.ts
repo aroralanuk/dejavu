@@ -51,6 +51,62 @@ describe('dejavu', () => {
     );
   });
 
+  it('UpdateIdea', async () => {
+    const test_idea = anchor.web3.Keypair.generate();
+    // Add your test here.
+    const initializeIdeaParams = {
+      createdTs: new anchor.BN(Date.now()),
+      uri: '0'.repeat(256),
+    };
+    const initTx = await program.methods
+      .initializeIdea(initializeIdeaParams)
+      .accounts({
+        idea: test_idea.publicKey,
+        creator: program.provider.wallet.publicKey,
+        systemProgram: anchor.web3.SystemProgram.programId,
+        rent: anchor.web3.SYSVAR_RENT_PUBKEY,
+      })
+      .signers([test_idea])
+      .rpc();
+    console.log('Your transaction signature', initTx);
+
+    const updateIdeaParams = {
+      lastUpdatedTs: new anchor.BN(Date.now()),
+      uri: '1'.repeat(256),
+    };
+
+    const updateTx = await program.methods
+      .updateIdea(updateIdeaParams)
+      .accounts({
+        idea: test_idea.publicKey,
+        creator: program.provider.wallet.publicKey,
+      })
+      .rpc();
+    console.log('Your transaction signature', updateTx);
+
+    const account = await program.account.idea.fetch(test_idea.publicKey);
+    assert.strictEqual(
+      account.creator.toString(),
+      program.provider.wallet.publicKey.toString(),
+    );
+    assert.strictEqual(
+      account.createdTs.toNumber(),
+      initializeIdeaParams.createdTs.toNumber(),
+    );
+    assert.strictEqual(
+      account.lastUpdatedTs.toNumber(),
+      updateIdeaParams.lastUpdatedTs.toNumber(),
+    );
+    assert.strictEqual(account.version, 1);
+    assert.strictEqual(account.uri.len, 256);
+    assert.strictEqual(
+      Buffer.from(account.uri.uri)
+        .subarray(0, account.uri.len)
+        .toString('utf8'),
+      updateIdeaParams.uri,
+    );
+  });
+
   // it('InitializeIdea - bad uri length', async () => {
   //   const test_idea = anchor.web3.Keypair.generate();
   //   // Add your test here.
