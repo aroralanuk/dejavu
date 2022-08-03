@@ -1624,6 +1624,13 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@solana-mobile/mobile-wallet-adapter-protocol@^0.0.1-alpha.8":
+  "integrity" "sha512-DxnFySkRIwj9wwEGe5smFHCyhc6EQ7o77qGmALceqKeUDK7jHkZEUoPlCBrQdTKC7HbF21Fl9oHFJojiIKnQtA=="
+  "resolved" "https://registry.npmjs.org/@solana-mobile/mobile-wallet-adapter-protocol/-/mobile-wallet-adapter-protocol-0.0.1-alpha.8.tgz"
+  "version" "0.0.1-alpha.8"
+  dependencies:
+    "react-native" "^0.69.1"
+
 "@solana/buffer-layout@^4.0.0":
   "integrity" "sha512-lR0EMP2HC3+Mxwd4YcnZb0smnaDw7Bl2IQWZiTevRH5ZZBZn6VRWn3/92E3qdU4SSImJkA6IDHawOHAnx/qUvQ=="
   "resolved" "https://registry.npmjs.org/@solana/buffer-layout/-/buffer-layout-4.0.0.tgz"
@@ -1631,21 +1638,21 @@
   dependencies:
     "buffer" "~6.0.3"
 
-"@solana/wallet-adapter-base@^0.9.9":
+"@solana/wallet-adapter-base@^0.9.8", "@solana/wallet-adapter-base@^0.9.9":
   "integrity" "sha512-Z0zB+36JWRytE2OzMiB2DACRyVwiUdEg2Xy1nPR0rESCTXKI8wQGTb4g6ELjmTTU7+elKqsPE+fhFsJykn76pQ=="
   "resolved" "https://registry.npmjs.org/@solana/wallet-adapter-base/-/wallet-adapter-base-0.9.9.tgz"
   "version" "0.9.9"
   dependencies:
     "eventemitter3" "^4.0.0"
 
-"@solana/wallet-adapter-react@^0.15.8":
+"@solana/wallet-adapter-react@^0.15.7":
   "integrity" "sha512-/0Kbnt/HqdlfGMaI7/BXpQYsfBmfTPPLkR6xBcVITcPa6WKytkap/d4gwmY3skum/naoCP8Bof9uXynZNO8/SA=="
   "resolved" "https://registry.npmjs.org/@solana/wallet-adapter-react/-/wallet-adapter-react-0.15.8.tgz"
   "version" "0.15.8"
   dependencies:
     "@solana/wallet-adapter-base" "^0.9.9"
 
-"@solana/web3.js@^1.44.3", "@solana/web3.js@^1.50.1":
+"@solana/web3.js@^1.44.3", "@solana/web3.js@^1.48.0":
   "integrity" "sha512-1l9N/nS8pJEA2YibNT8wa072718O0/A1eKWE0+pdWC5wDGQgBNxZSLuv7Cq5Dcn46WsZ5J5ZstK89q8J/ZZaQA=="
   "resolved" "https://registry.npmjs.org/@solana/web3.js/-/web3.js-1.50.1.tgz"
   "version" "1.50.1"
@@ -3482,6 +3489,11 @@
   "resolved" "https://registry.npmjs.org/eyes/-/eyes-0.1.8.tgz"
   "version" "0.1.8"
 
+"fast-base64-decode@^1.0.0":
+  "integrity" "sha512-qwaScUgUGBYeDNRnbc/KyllVU88Jk1pRHPStuF/lO7B0/RTRLj7U0lkdTAutlBblY08rwZDff6tNU9cjv6j//Q=="
+  "resolved" "https://registry.npmjs.org/fast-base64-decode/-/fast-base64-decode-1.0.0.tgz"
+  "version" "1.0.0"
+
 "fast-deep-equal@^3.1.1", "fast-deep-equal@^3.1.3":
   "integrity" "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="
   "resolved" "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
@@ -4867,6 +4879,11 @@
     "@sideway/formula" "^3.0.0"
     "@sideway/pinpoint" "^2.0.0"
 
+"js-base64@^3.7.2":
+  "integrity" "sha512-NnRs6dsyqUXejqk/yv2aiXlAvOs56sLkX6nUdeaNezI5LFFLlsZjOThmwnrcwh5ZZRwZlCMnVAY3CvhIhoVEKQ=="
+  "resolved" "https://registry.npmjs.org/js-base64/-/js-base64-3.7.2.tgz"
+  "version" "3.7.2"
+
 "js-sha3@^0.8.0":
   "integrity" "sha512-gF1cRrHhIzNfToc802P800N8PpXS+evLLXfsVpowqmAFR9uwbi89WvXg2QspOmXL8QL86J4T1EpFu+yUkwJY3Q=="
   "resolved" "https://registry.npmjs.org/js-sha3/-/js-sha3-0.8.0.tgz"
@@ -5103,6 +5120,11 @@
   "integrity" "sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg=="
   "resolved" "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz"
   "version" "1.2.4"
+
+"localstorage-polyfill@^1.0.1":
+  "integrity" "sha512-m4iHVZxFH5734oQcPKU08025gIz2+4bjWR9lulP8ZYxEJR0BpA0w32oJmkzh8y3UI9ci7xCBehQDc3oA1X+VHw=="
+  "resolved" "https://registry.npmjs.org/localstorage-polyfill/-/localstorage-polyfill-1.0.1.tgz"
+  "version" "1.0.1"
 
 "locate-path@^3.0.0":
   "integrity" "sha512-7AO748wWnIhNqAuaty2ZWHkQHRSNfPVIsPIfwEOWO22AmaoVrWavlOcMR5nzTLNYvp36X220/maaRsrec1G65A=="
@@ -6218,6 +6240,13 @@
     "jscodeshift" "^0.13.1"
     "nullthrows" "^1.1.1"
 
+"react-native-get-random-values@^1.8.0":
+  "integrity" "sha512-H/zghhun0T+UIJLmig3+ZuBCvF66rdbiWUfRSNS6kv5oDSpa1ZiVyvRWtuPesQpT8dXj+Bv7WJRQOUP+5TB1sA=="
+  "resolved" "https://registry.npmjs.org/react-native-get-random-values/-/react-native-get-random-values-1.8.0.tgz"
+  "version" "1.8.0"
+  dependencies:
+    "fast-base64-decode" "^1.0.0"
+
 "react-native-gradle-plugin@^0.0.7":
   "integrity" "sha512-+4JpbIx42zGTONhBTIXSyfyHICHC29VTvhkkoUOJAh/XHPEixpuBduYgf6Y4y9wsN1ARlQhBBoptTvXvAFQf5g=="
   "resolved" "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.0.7.tgz"
@@ -6244,7 +6273,7 @@
   dependencies:
     "whatwg-url-without-unicode" "8.0.0-3"
 
-"react-native-vector-icons@*":
+"react-native-vector-icons@*", "react-native-vector-icons@^9.2.0":
   "integrity" "sha512-wKYLaFuQST/chH3AJRjmOLoLy3JEs1JR6zMNgTaemFpNoXs0ztRnTxcxFD9xhX7cJe1/zoN5BpQYe7kL0m5yyA=="
   "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-9.2.0.tgz"
   "version" "9.2.0"
@@ -6252,7 +6281,7 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native@*", "react-native@^0.0.0-0 || 0.60 - 0.69 || 1000.0.0", "react-native@>=0.42.0", "react-native@0.69.3":
+"react-native@*", "react-native@^0.0.0-0 || 0.60 - 0.69 || 1000.0.0", "react-native@^0.69.1", "react-native@>=0.42.0", "react-native@>=0.56", "react-native@0.69.3":
   "integrity" "sha512-SyGkcoEUa/BkO+wKVnv4OsnLSNfUM5zLNXS3iT/3eXjKX91/FKBH/nfR9BE1c60X5LQe/P5QYqr6WPX3TRSQkA=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.69.3.tgz"
   "version" "0.69.3"
