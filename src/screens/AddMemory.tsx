@@ -4,7 +4,7 @@ import {Appbar, Divider, Portal, Text, TextInput} from 'react-native-paper';
 
 // import SignMessageButton from '../components/SignMessageButton';
 
-export default function MainScreen() {
+export default function AddMemory() {
   const [memoText, setMemoText] = useState('');
   return (
     <>
