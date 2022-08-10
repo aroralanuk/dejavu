@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {ScrollView, StyleSheet} from 'react-native';
+import {ScrollView, StyleSheet, Button} from 'react-native';
 import {Appbar, Divider, Portal, Text, TextInput} from 'react-native-paper';
 
-import SignMessageButton from '../components/SignMessageButton';
+// import SignMessageButton from '../components/SignMessageButton';
 
 export default function MainScreen() {
   const [memoText, setMemoText] = useState('');
@@ -27,7 +27,7 @@ export default function MainScreen() {
           />
           <Divider style={styles.spacer} />
           <Divider style={styles.spacer} />
-          <SignMessageButton message={memoText}>Sign Message</SignMessageButton>
+          <Button onPress={() => {}}>Sign Message</Button>
         </ScrollView>
       </Portal.Host>
     </>
